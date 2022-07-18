@@ -1,0 +1,331 @@
+
+
+
+#svgd{
+  position: relative;
+  height: 200px;
+  top:-10px;
+  z-index: 1;
+}
+
+#titlerpg{
+  width:100%;
+   height:190pt;
+}
+
+
+
+h1 {
+  background-color: RGBA(110, 147, 205, 0.5);
+  padding: 0 5px 3px 5px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 15px 0 10px;
+  border: 1px #786ecd solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h2 {
+  background-color: RGBA(110, 147, 205, 0.5);
+  padding: 0 5px 3px 5px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 15px 0 10px;
+  border: 1px #786ecd solid;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.btns {
+  text-align: center;
+}
+
+
+
+h1, p, #shot .title::before {
+  font-weight: 500;
+
+}
+
+p, #shot .title::before {
+  opacity: 0.9;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p:hover{
+
+    -webkit-filter: none;
+    -moz-filter:  none;
+    -ms-filter:  none;
+    -o-filter:  none;
+    filter:  none;
+
+}
+
+a {
+  color: #786ecd;
+   text-decoration: none;
+}
+a:hover {
+
+  text-decoration: none;
+}
+
+
+
+#shot {
+
+
+  -webkit-animation: entrance 2000ms 2000ms linear backwards 1;
+          animation: entrance 2000ms 2000ms linear backwards 1;
+  display: grid;
+}
+#det {
+	background-color: rgba(137, 139, 145, 0.096);
+	height: 258px;
+	border: 1px #ffffff3b solid;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0 auto;
+	min-width: 272px !important;
+  width: 30wv;
+	-webkit-animation: entrance 2000ms 2000ms linear backwards 1;
+	animation: entrance 2000ms 2000ms linear backwards 1;
+	scroll-behavior: smooth;
+}
+
+
+.card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background: linear-gradient(0deg, rgba(245, 213, 70, 0.1) 0%, rgba(17, 17, 17, 0) 100%);
+  border: 1px #786ecd solid;
+  border-radius: 5px;
+
+  -webkit-animation: entrance 2000ms 2000ms linear backwards 1;
+          animation: entrance 2000ms 2000ms linear backwards 1;
+}
+.card #component {
+  margin: auto;
+}
+#desc {
+  opacity: 0;
+  transition: all 1.9s ease-in-out ;
+}
+
+#desc.ended{
+  opacity: 1;
+}
+
+#desc2 {
+  opacity: 0;
+  transition: all 2.9s ease-in-out ;
+}
+
+#desc2.ended{
+  opacity: 1;
+}
+
+
+.title {
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  background: #786ecd;
+  -webkit-animation: entrance 400ms 1200ms linear backwards 1;
+          animation: entrance 400ms 1200ms linear backwards 1;
+}
+.title::before {
+ 
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+  left: -92px;
+  top: -17px;
+  transform-origin: 100% 100%;
+  transform: rotateZ(-90deg);
+}
+
+#slogo{
+  position: relative;
+  top: 1em;
+  opacity: 0;
+  -webkit-animation: entrance 3000ms 3000ms linear backwards 1;
+  animation: entrance 3000ms 3000ms linear backwards 1;
+}
+
+#slogo.ended{
+  opacity: 1;
+  top: 1em;
+}
+
+.options {
+
+  left: 0;
+  color: #fff;
+  font-size: .8em;
+  width: 100%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  z-index: 2;
+  opacity: 1;
+  transition: all 1.9s ease-in-out ;
+  padding: 0;
+  margin: 0;
+}
+
+#buttonscont{
+  margin-top: 10px;
+  position: relative;
+  top: 1em;
+  opacity: 0;
+  -webkit-animation: entrance 500ms 6000ms linear backwards 1;
+  animation: entrance 500ms 6000ms linear backwards 1;
+}
+
+#buttonscont.ended{
+  opacity: 1;
+}
+
+.options button {
+	height: 31px;
+	margin: 5px;
+	border: 1px #111 solid;
+	width: 85px;
+	background-color: transparent;
+	font-size: 11px;
+	color: #fff;
+	cursor: pointer;
+	transition: 300ms all ease-out;
+	border-radius: 5px;
+}
+
+.options button:hover{
+  background-color: rgba(27, 26, 28, 0.41) !important;
+}
+.options button.active {
+  border: 5px #786ecd solid;
+  background-color: RGBA(110, 147, 205, 0.5);
+  color: #111111;
+
+}
+
+@-webkit-keyframes entrance {
+  to, 20%, 40%, 60%, 80% {
+    opacity: 1;
+  }
+  from, 10%, 30%, 50%, 70%, 90% {
+    opacity: 0;
+  }
+}
+
+@keyframes entrance {
+  to, 20%, 40%, 60%, 80% {
+    opacity: 1;
+  }
+  from, 10%, 30%, 50%, 70%, 90% {
+    opacity: 0;
+  }
+}
+
+ /* @media only screen and (min-width: 360px) {
+
+  #shot {
+    width: 400px;
+    margin-top: 0 auto;
+    height: 107%;
+    border:none;
+    padding: 10px;
+    -webkit-animation: entrance 200ms 900ms linear backwards 1;
+            animation: entrance 200ms 900ms linear backwards 1;
+    display: grid;
+  }
+  #det{
+
+    background-color: rgba(137, 139, 145, 0.096);
+    height: 200px;
+    border:none;
+    padding: 10px;
+    margin: 0 auto;
+    -webkit-animation: entrance 300ms 800ms linear backwards 1;
+            animation: entrance 300ms 800ms linear backwards 1;
+            margin-bottom: 20px;
+  }
+  
+
+}  */
+
+
+
+
+
+/* @media only screen and (max-width: 338px) {
+
+  #shot {
+
+    width: 400px;
+    margin-top: 0 auto;
+    height: 107%;
+    border:none;
+    padding: 10px;
+    -webkit-animation: entrance 200ms 900ms linear backwards 1;
+            animation: entrance 200ms 900ms linear backwards 1;
+    display: grid;
+  }
+  #det{
+
+    background-color: rgba(137, 139, 145, 0.096);
+    height: 30%;
+    border: none;
+   
+    padding: 10px;
+    margin: 0 auto;
+    -webkit-animation: entrance 300ms 800ms linear backwards 1;
+            animation: entrance 300ms 800ms linear backwards 1;
+            
+  }
+  
+
+}
+
+@media only screen and (max-width: 423px ) and (min-width: 361px) {
+  #shot {
+
+    width: 400px;
+    margin-top: 0 auto;
+    height: 107%;
+
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-animation: entrance 200ms 900ms linear backwards 1;
+            animation: entrance 200ms 900ms linear backwards 1;
+    display: grid;
+  }
+  #det{
+
+    background-color: rgba(137, 139, 145, 0.096);
+    height: 30%;
+
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    -webkit-animation: entrance 300ms 800ms linear backwards 1;
+            animation: entrance 300ms 800ms linear backwards 1;
+            
+  }
+  
+
+} */
+
+
